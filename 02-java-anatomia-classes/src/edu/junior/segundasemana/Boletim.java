@@ -1,4 +1,5 @@
 package edu.junior.segundasemana;
+
 public class Boletim {
   public static void main(String[] args) {
     int mediaFinal = 8;
