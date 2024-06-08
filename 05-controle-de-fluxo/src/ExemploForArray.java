@@ -6,6 +6,7 @@ public class ExemploForArray {
       System.out.println("O aluno número " + i + " é " + alunos[i]);
     }
 
+    // Usando o for each
     for (String aluno : alunos) {
       System.out.println("Aluno: " + aluno);
     }
