@@ -4,7 +4,7 @@ public class FormatadorCepExemplo {
       String cepFormatado = formatarCep("6557000");
       System.out.println(cepFormatado);
     } catch (CepInvalidoException e) {
-      e.printStackTrace();
+      System.out.println("O CEP deve conter 8 números.");
     }
   }
 
