@@ -6,7 +6,12 @@ public class Main {
 		Conta conta = new Conta();
 		
 		conta.deposita(100);
-		conta.saca(200);
+		try {
+			conta.saca(200);
+		} catch (SaldoInsuficienteException e) {
+			System.out.println(e.getMessage());
+		}
+		
 		
 		System.out.println(conta.getSaldo());
 	}

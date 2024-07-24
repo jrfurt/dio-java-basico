@@ -13,13 +13,11 @@ public class Conta {
 		System.out.println("Depositado: " + valor);
 	}
 	
-	boolean saca(int valor) {
+	void saca(int valor) throws SaldoInsuficienteException {
 		if (valor > this.saldo) {
-			System.out.println("Valor de saque maior que o saldo em conta");
-			return false;
+			throw new SaldoInsuficienteException("Saldo insuficiente.");
 		} else {
 			this.saldo -= valor;
-			return true;
 		}
 	}
 }
