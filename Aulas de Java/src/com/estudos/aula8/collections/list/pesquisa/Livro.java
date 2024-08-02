@@ -22,4 +22,12 @@ public class Livro {
 	public String getTitulo() {
 		return titulo;
 	}
+	
+	@Override
+	public String toString() {
+		return "{ Título: " + titulo
+			+ ", Autor: " + autor
+			+ ", Ano de Publicação: " + anoPublicacao
+			+ " }";
+	}
 }

@@ -12,7 +12,6 @@ public class Item {
 	}
 
 	public Item(double preco, int quantidade) {
-		super();
 		this.preco = preco;
 		this.quantidade = quantidade;
 	}
@@ -31,7 +30,9 @@ public class Item {
 	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return "ITEM: " + nome + " - PREÇO: " + preco + " - QTD: " + quantidade;
+		return "{ ITEM: " + nome
+			+ ", PREÇO: " + preco
+			+ ", QTD: " + quantidade
+			+ " }";
 	}
 }
