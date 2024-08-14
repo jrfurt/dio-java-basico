@@ -1,4 +1,4 @@
-package com.estudos.aula8.collections.list;
+package com.estudos.aula8.collections.list.operacoesbasicas;
 
 public class Tarefa {
 	private String descricao;
